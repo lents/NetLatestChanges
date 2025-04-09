@@ -7,7 +7,7 @@ public static class Interceptor
 {
     [DebuggerHidden]
     [InterceptsLocation
-        (@"C:\Users\Elena\source\repos\NetLatestChanges\Interceptor\Logger.cs", 7, 9)]
+        (@"D:\Projects\OTUS\NetLatestChanges\Interceptor\Logger.cs", 4, 9)]
     public static void DebugLog(this Logger logger, string message)
     {
         Console.WriteLine(message);
