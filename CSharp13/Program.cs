@@ -86,9 +86,20 @@ public class Processor
         }
     }
 }
-//public class Person
-//{
-//    public string Name { get => field.Trim(); set; }
-//}
+public class Person
+{
+    public int Age {  get; set; }
+    //public string Name { get => field.Trim(); set; }
+}
+
+public struct Point { 
+
+    public int X {  get; set; } public int Y { get; set; }
+    public Point(int x, int y) { X = x; Y = y; }
+    public readonly double Distance(ref Person person) {
+        person.Age = 23;
+        return Math.Sqrt(X * X + Y * Y) * person.Age;
+    }
+}
 
 

@@ -4,13 +4,12 @@
     {
         static void Main(string[] args)
         {
-            var person = new Person { Details = new Details { FirstName=""} };
-            Console.WriteLine(person.Details.FirstName.Length);
+            var person = new Person { Details = new Details { FirstName="@"} };
+            Console.WriteLine(person.Details.LastName.Length);
         }
 
         public class Person { 
-            public required Details Details { get; set; }
-
+            public required Details Details { get; set; }            
         }
     }
 
